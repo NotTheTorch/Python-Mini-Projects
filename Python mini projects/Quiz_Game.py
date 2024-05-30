@@ -42,19 +42,5 @@ else:
 
 print("_______________________________________________________________________")
 
-if score == 5:
-    print("\nScore:",score)
-    print("Congratulations, you got Perfect Score!")
-
-elif score == 4 or score == 3:
-    print("Score:",score)
-    print("Congratulations, you got Good Score!")
-
-elif score == 2 or score == 1:
-    print("Score:",score)
-    print("Try Again, you may get Good Score!")
-
-
-elif score == 0:
-    print("Score:",score)
-    print("Better Luck next time!")
+print("You got",score,"questions correct")
+print("You have scored",((score/5)*100),"%")
