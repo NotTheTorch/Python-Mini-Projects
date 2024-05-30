@@ -25,14 +25,5 @@ for question, correct_answer in questions.items():
 
 print("_______________________________________________________________________")
 
-if score == 5:
-    feedback = "Congratulations, you got a Perfect Score!"
-elif score in [3, 4]:
-    feedback = "Congratulations, you got a Good Score!"
-elif score in [1, 2]:
-    feedback = "Try Again, you may get a Good Score!"
-else:
-    feedback = "Better Luck next time!"
-
-print(f"\nScore: {score}")
-print(feedback)
+print("You got",score,"questions correct")
+print("You have scored",((score/len(questions))*100),"%")
